@@ -377,9 +377,6 @@ class Level extends Phaser.Scene {
 
         // displaying level number in bottom left corner
         this.add.text(10, 335, `Level ${gameState.level}`, { fontSize: '16px', fill: '#000', fontFamily: 'Roboto, serif' });
-
-        //tests
-        gameState.test = this.add.text(200, 335, `Game Over value: ${gameState.gameOver}`, { fontSize: '16px', fill: '#000', fontFamily: 'Roboto, serif' });
     }
 
     update () {
@@ -393,8 +390,5 @@ class Level extends Phaser.Scene {
         }
         
         gameState.touchingBlock = false;
-
-        //tests
-        gameState.test.setText(`Game Over value: ${gameState.gameOver}`);
     }
 }
